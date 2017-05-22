@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Shell w0rms</title>
+<style>
+body {
+  margin: 0 auto;
+  font-family: monospace;
+background: linear-gradient(
+  to bottom,
+    #010500,
+    #010500 50%,
+    #010800 50%,
+    #010800
+);
+  background-size: 100% 7px;
+  color: green;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 100px;
+  text-shadow: 0px 2px 2px black;
+}
+.flick {
+  opacity: 0;
+  animation: flick 1s linear infinite;
+}
+@keyframes flick {
+  0%{opacity: 0;}
+  49.9%{opacity: 0;}
+  50%{opacity: 1;}
+  100%{opacity: 1;}
+}
+.title {
+  font-size: 50px;
+  color: green;
+  text-shadow: 0px 0px 5px green;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.footer {
+  text-shadow: 0px 0px 1px green;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background: #010800;
+  position: absolute;
+  bottom: 0;
+  color: green;
+}
+</style>
+</head>
+<noscript>
+	var say = 10;
+setInterval(function() {
+  say--;
+  document.getElementById("box").innerHTML = say;
+  if(say==0){
+    //window.location.replace('http://w0rms.com');
+  }
+}, 1000);
+</noscript>
+<body>
+<div class="title">W0RMS</div>
+<span class="flick">></span>shell <span id="box">archive</span> 
+</div>
+</body>
+</html>
